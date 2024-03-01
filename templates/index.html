@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="1st-style.css">
+    <link rel="stylesheet" href="../static/1st-style.css">
     <link rel="shortcut icon" href='data:image/svg+xml,<svg%20xmlns="http://www.w3.org/2000/svg"></svg>' />
     <title>Галерея</title>
 </head>
@@ -27,27 +27,29 @@
     </div>
 
     <div class="title">
+        <ul>
+            {% for data in data_source %}
 
-        <div class="title-name-first">
-            <a class="name-first" href="#">Абстракционизм</a>                
-        </div>
-        
-        <div class="body-title">
-            <div class="scroll">
-                <div class="scrl">
-                    <img class="scrl-img" src="image1.png" alt="">
-                    <img class="scrl-img" src="image2.png" alt="">
-                    <img class="scrl-img" src="image3.png" alt="">
-                    <img class="scrl-img" src="image4.png" alt="">
-                    <img class="scrl-img" src="image5.png" alt="">
-                    <img class="scrl-img" src="image6.png" alt="">
-                    <img class="scrl-img" src="image7.png" alt=""> 
+            <li>
+                <div class="title-name-first">
+                    <a class="name-first" href="#">{{ data.title }}</a>
                 </div>
-                
-            </div>
-    
-            <script src="app.js"></script>
-        </div>
+                <div class="body-title">
+                    <div class="scroll">
+                        <ul class="scrl">
+                            {% for image_source in data.image_sources %}
+                            <li>
+                                <img class="scrl-img" src={{ image_source }}>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <script src="../static/app.js"></script>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
     </div>
 
     <div class="contact-title">
