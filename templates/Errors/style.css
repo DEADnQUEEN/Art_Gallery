@@ -11,7 +11,7 @@ html{
 }
 
 .container{
-    margin: 0px 170px;
+    margin: 0 170px;
 }
 
 .header{
@@ -45,7 +45,7 @@ html{
 }
 
 .title-name-first{
-    margin-left: 160px;
+    padding-left: 160px;
     padding-top: 65px;
     padding-bottom: 40px;
     text-align: left;
@@ -65,7 +65,7 @@ html{
 }
 
 .scroll {
-  width: 94%;
+  width: 90%;
   margin-left: auto;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -81,7 +81,7 @@ html{
 
 .scrl-img{
   border-radius: 20px;
-  border: 0px solid rgb(0, 0, 0);
+  border: 0 solid rgb(0, 0, 0);
   width: 100%;
   margin-right: 20px;
   height: 400px;
