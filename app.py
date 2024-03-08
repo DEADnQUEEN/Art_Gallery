@@ -1,11 +1,9 @@
 import os
 import string
-from flask import Flask, render_template, request, make_response
+from flask import Flask, render_template
 from jinja2 import Environment, FileSystemLoader
-import json
 
 app = Flask(__name__)
-env = Environment(loader=FileSystemLoader(f'{app.template_folder}\\'))
 link = '.html'
 page_source = app.static_folder + '\\Pages'
 
@@ -17,52 +15,46 @@ def data_compose(path: str) -> dict[str: str or dict or list]:
     :return: dict -> data, stored by keys (title, dirs, content + extends(['.css', '.js']))
     """
     ls = os.listdir(path)
-    extents = ['.css', '.js', '.html']
+    sub = '\\'
+    extents = ['.css', '.js']
     data: dict[str: str or dict] = {
-        "title": path.split('/')[-1],
+        "title": path.split(sub)[-1],
         "dirs": {},
-        "content": []
+        "content": [],
+        "html": f'{path.split(sub)[-1]}.html'
     }
 
     for i in range(len(extents)):
         data[extents[i][1:]] = {}
 
     for i in range(len(ls)):
+        pth = "..\\static" + f"{path}\\{ls[i]}"[len(app.static_folder):]
         if os.path.isdir(f"{path}/{ls[i]}"):
             data["dirs"][ls[i]] = data_compose(f"{path}\\{ls[i]}")
         else:
             for ex in range(len(extents)):
                 if extents[ex] in ls[i]:
-                    data[extents[ex][1:]][ls[i].rstrip(string.ascii_letters)[:-1]] = f"{path}\\{ls[i]}"
+                    data[extents[ex][1:]][ls[i].rstrip(string.ascii_letters)[:-1]] = pth
                     break
             else:
-                data["content"].append(f"{path}\\{ls[i]}")
+                data["content"].append(pth)
 
     return data
 
 
-def create_template(file_name):
-    tmp_name = 'Errors/error.html'
-    if file_name in os.listdir(page_source):
-        data = data_compose(page_source + '\\' + file_name)
-        print(data['html'])
-        template = env.get_template(data['html']['index'])
+def create_template(filename):
+    if filename not in os.listdir(page_source):
+        filename = "Error"
 
-        return template.render(data=data)
-
-    return render_template(tmp_name)
-
-
-def get_type(value: any) -> str:
-    print(type(value))
-    return str(type(value))
+    env = Environment(loader=FileSystemLoader(app.template_folder))
+    data = data_compose(page_source + '\\' + filename)
+    template = env.get_template(data['html'])
+    return template.render(data=data)
 
 
 @app.route('/')
 def main():
-    temp = env.get_template("main_index.html")
-    temp.globals.update({'get_type': get_type})
-    return temp.render(data=data_compose('static\\Pages\\Gallery'))
+    return create_template('Gallery')
 
 
 @app.route('/', defaults={'path': ''})

@@ -1,0 +1,11 @@
+{% extends 'main_index.html' %}{% block extension %}<div class="content">{% for d_key in data.dirs.keys() %}
+        <a class="name-first" href="#">{{ data.dirs[d_key].title }}</a>
+        <div class="body-title">
+            <div class="scroll">
+                <div class="scrl">{% for sub_d_key in data.dirs[d_key].dirs.keys() %}{% for image_source in data.dirs[d_key].dirs[sub_d_key].content %}
+                    <img alt="" class="scrl-img" src={{ image_source }}>{% endfor %}{% endfor %}
+                </div>
+            </div>
+            <script src="{{ data.js.app }}"></script>
+        </div>{% endfor %}
+</div>{% endblock %}

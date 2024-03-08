@@ -6,7 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ data.css.style }}">
+    <link rel="stylesheet" type="text/css" href="{{ data.css.style }}">
+    <link rel="stylesheet" type="text/css" href="../static/main.css"/>
     <link rel="shortcut icon" href='data:image/svg+xml,<svg%20xmlns="http://www.w3.org/2000/svg"></svg>' />
     <title>{{ data.title }}</title>
 </head>
@@ -26,26 +27,8 @@
         </div>
     </div>
 
-    <div class="title">
-        {% for d_key in data.dirs.keys() %}
-            <div class="title-name-first">
-                <a class="name-first" href="#">{{ data.dirs[d_key].title }}</a>
-            </div>
-            <div class="body-title">
-                <div class="scroll">
-                    <div class="scrl">
-                        {% for sub_d_key in data.dirs[d_key].dirs.keys() %}
-                            {% for image_source in data.dirs[d_key].dirs[sub_d_key].content %}
-                                <img alt="" class="scrl-img" src={{ image_source }}>
-                            {% endfor %}
-                        {% endfor %}
-                    </div>
-                </div>
+    {% block extension %}{% endblock %}
 
-                <script src="{{ data.js.app }}"></script>
-            </div>
-        {% endfor %}
-    </div>
     <div class="contact-title">
         <a class="contact" href="">Contact</a>
     </div>
