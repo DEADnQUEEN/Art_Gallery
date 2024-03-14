@@ -1,14 +1,35 @@
-body{
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
+html,
+body {
     height: 100%;
-    min-height: 100vh;
+    margin: 0;
     background-color: #222222;
+    font-family: "Open Sans", sans-serif;
+}
+
+.all {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.all .header {
+    flex: 0 1 100px;
+}
+
+.all .extension {
+    flex: 1 1 auto;
+}
+
+.all .contact-title {
+    flex: 0 1 100px;
 }
 
 .header{
     background-color: rgb(52, 52, 52);
-    padding: 20px 100px;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header-txt{
@@ -25,6 +46,7 @@ body{
 }
 
 .header-title{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -39,7 +61,22 @@ body{
     transition: color 0.3s linear;
 }
 
+.contact-title{
+    background-color: rgb(52, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .contact:hover{
     color: rgb(180, 229, 21);
 }
+
+.contact-right{
+    padding-right: 160px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
 

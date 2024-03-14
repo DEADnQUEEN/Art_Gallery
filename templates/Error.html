@@ -1,4 +1,12 @@
 {% extends "main_index.html" %}
 {% block extension %}
-    <a>Connection Error. This link is invalid or never existed</a>
+        <div class="error">
+            <div class="error-title">
+                ERROR №{{ data.code }}
+            </div>
+
+            <div class="error-main">
+                Connection error description: {{ data.description }}
+            </div>
+        </div>
 {% endblock %}

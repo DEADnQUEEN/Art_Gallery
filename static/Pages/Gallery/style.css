@@ -27,7 +27,7 @@
 }
 
 .scroll {
-    max-width: 100%;
+    max-width: 90%;
     margin-left: auto;
     overflow-x: clip;
     overflow-y: clip;

@@ -12,25 +12,31 @@
     <title>{{ data.title }}</title>
 </head>
 <body>
+<div class="all">
     <div class="header">
-        <div class="container">
+        <div class="header-title">
+            <a id="header-txt" href="#">
+                Name
+            </a>
 
-            <div class="header-title">
-                <a id="header-txt" href="#">
-                    Name
-                </a>
-
-                <a id="header-txt" href="#">
-                    Info About
-                </a>
-            </div>
+            <a id="header-txt" href="#">
+                Info About
+            </a>
         </div>
     </div>
-
-    {% block extension %}{% endblock %}
-
+    <div class="extension">
+        {% block extension %}{% endblock %}
+    </div>
     <div class="contact-title">
         <a class="contact" href="">Contact</a>
+
+        <div class="contact-right">
+            Number: 8(800)-888-88-88 <br>
+            WhatsApp: 8(888)-800-80-80 <br>
+            Telegram: @ArtGalleryKRD <br>
+            Email: Art-Gallery@krd.ru
+        </div>
     </div>
+</div>
 </body>
 </html>
