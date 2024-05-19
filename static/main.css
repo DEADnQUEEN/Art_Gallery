@@ -1,9 +1,17 @@
+:root{
+    --sub-color: rgba(0, 0, 0, 0.4);
+}
+
 html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #222222;
-    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(90deg, #4568DC 0%, #B06AB3 100%);
+    font-family: "JetBrains Mono", monospace;
+}
+
+a {
+    color: white;
 }
 
 .all {
@@ -13,36 +21,35 @@ body {
 }
 
 .all .header {
-    flex: 0 1 100px;
+    position: sticky;
+    top: 0;
+    flex: 0 1 0;
+    z-index: 3;
 }
 
 .all .extension {
     flex: 1 1 auto;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .all .contact-title {
-    flex: 0 1 100px;
+    flex: 0 1 0;
 }
 
 .header{
-    background-color: rgb(52, 52, 52);
-    padding: 0 100px;
+    background-color: var(--sub-color);
+    padding: 20px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#header-txt{
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 600;
-    color: #fff;
-
-    transition: color 0.3s linear;
-}
-
-#header-txt:hover{
-    color: rgb(180, 229, 21);
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .header-title{
@@ -51,32 +58,60 @@ body {
     justify-content: space-between;
 }
 
-.contact{
-    color: #fff;
-    font-size: 28px;
-    font-weight: 600;
-    text-decoration: none;
-    padding-left: 160px;
-
-    transition: color 0.3s linear;
-}
-
 .contact-title{
-    background-color: rgb(52, 52, 52);
+    background-color: var(--sub-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact:hover{
-    color: rgb(180, 229, 21);
-}
-
-.contact-right{
-    padding-right: 160px;
+.contact-block a{
     color: #fff;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
+    text-decoration: none;
+
+    transition: all .5s;
 }
 
+.contact-block a:hover{
+    color: black;
+}
 
+*::-webkit-scrollbar {
+    display: none
+}
+
+.text-button {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    word-spacing: -1px;
+    transition: 0.3s;
+    text-decoration: none;
+    outline: none;
+}
+
+.text-button:hover {
+    background-color: white;
+    color: #222222;
+    outline: none;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sub-color);
+    padding: 20px;
+    border-radius: 20px;
+}
