@@ -1,0 +1,26 @@
+{% extends 'main_index.html' %}
+{% block extension %}
+<div class="gallery-header">
+    <a>
+        Gallery
+    </a>
+</div>
+<div class="content">
+    {% for d_key in data.dirs.keys() %}
+    <div class="content-block">
+        <div class="header-buttons">
+            <a class="text-button" href="/{{data.dirs[d_key].title}}">{{ data.dirs[d_key].title }}</a>
+        </div>
+        <div class="scroll-before">
+            <div class="scroll">
+                {% for dir_key in data.dirs[d_key].dirs.keys() %}
+                    {% for image_source in data.dirs[d_key].dirs[dir_key].content %}
+                        <img alt="" class="scroll-img" src={{ image_source }}>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

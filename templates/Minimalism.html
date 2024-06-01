@@ -1,0 +1,39 @@
+{% extends "main_index.html" %}
+{% block extension %}
+    <div class="title">
+        <div class="block-header">
+            <h1>{{ data.title }}</h1>
+        </div>
+        {% for page in range(data.blocks) %}
+        <div class="title-main">
+            <div class="title-txt">
+                <div class="title-text-header">
+                    <h2>
+                        {{ data.txt[page].title }}
+                    </h2>
+                    <h3>
+                        {{ data.txt[page].subtitle }}
+                    </h3>
+                </div>
+                <div class="title-text-content">
+                    <p>
+                        {{ data.txt[page].content }}
+                    </p>
+                </div>
+
+                <div class="title-text-footer">
+                    <p>
+                        {{ data.txt[page].footer }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="title-img">
+                <img src="{{ data.content[page] }}" alt="">
+            </div>
+            <img class="back" src="{{ data.content[page] }}" alt="">
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/main.css"/>
+    {% for key in data.css.keys() %}<link rel="stylesheet" type="text/css" href="{{ data.css[key] }}">{% endfor %}
+    {% for key in data.js.keys() %}<script src="{{ data.js[key] }}" defer></script>{% endfor %}
+    <link rel="shortcut icon" href='data:image/svg+xml,<svg%20xmlns="http://www.w3.org/2000/svg"></svg>' />
+    <title>{{ data.title }}</title>
+</head>
+<body>
+<div class="all">
+    <div class="header">
+        <div class="header-title">
+            <div class="header-buttons">
+                <a class="text-button" href="/Gallery">Home</a>
+            </div>
+            <div class="header-buttons">
+                <a class="text-button" href="/About">About project</a>
+            </div>
+        </div>
+    </div>
+    <div class="extension">
+        {% block extension %}{% endblock %}
+    </div>
+    <div class="contact-title">
+        <div class="contact">
+            <div class="contact-block">
+                <a href="/About">Contact</a>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="contact-block">
+                <a onclick="{
+                    navigator.clipboard.writeText('8(800)-888-88-88');
+                }">Number: 8(800)-888-88-88</a>
+                <a onclick="{
+                    navigator.clipboard.writeText('8(888)-800-80-80');
+                }">WhatsApp: 8(888)-800-80-80</a>
+            </div>
+            <div class="contact-block">
+                <a onclick="{
+                    navigator.clipboard.writeText('@ArtGalleryKRD');
+                }">Telegram: @ArtGalleryKRD</a>
+                <a onclick="{
+                    navigator.clipboard.writeText('Art-Gallery@krd.ru');
+                }">Email: Art-Gallery@krd.ru</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

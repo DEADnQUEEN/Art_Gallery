@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c10071c6-f2d1-436f-9c83-78f3eb52e9d3" name="Changes" comment="Flask integration" />
+    <list default="true" id="c10071c6-f2d1-436f-9c83-78f3eb52e9d3" name="Changes" comment="Contact line now is right bellow the main information &#10;small bug fix to error page and connection errors">
+      <change afterPath="$PROJECT_DIR$/tb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/Abstract/image_names/k1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/Abstract/image_names/k2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/Abstract/image_names/k3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/Abstract1/image_names/k1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/Abstract1/image_names/k2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/Abstract1/image_names/k3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/Pages/Gallery/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Pages/Gallery/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/Pages/Gallery/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/UI.fig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main_index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,40 +31,95 @@
       <list>
         <option value="Flask Main" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/PyCharm2022.3/python_stubs/14170769/builtins.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/test.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/venv/Lib/site-packages/flask/sansio/scaffold.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/http.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2d0ml8Enfm8PPpgerq0Dsk4yBEx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/deadn/Desktop/pyprojects/Art_Gallery/templates&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlite&quot;
+    ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\templates" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\static" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\static\Pages" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\static\Pages\Галерея" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\templates\Errors" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\static\Pages" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\static" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\Abstract" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\static\Pages\Error" />
+      <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flask server.Art_Gallery">
+    <configuration name="Abstract.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Art_Gallery/templates/Abstract.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Gallery.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Art_Gallery/templates/Gallery.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Art_Gallery" type="PythonConfigurationType" factoryName="Python">
       <module name="Art_Gallery" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,6 +142,89 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Art_Gallery" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Art_Gallery" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Art_Gallery" type="Python.FlaskServer">
+      <module name="Art_Gallery" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="Art_Gallery" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="JavaScript Debug.Gallery.html" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.tb" />
+        <item itemvalue="JavaScript Debug.Abstract.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -84,6 +238,27 @@
       <option name="presentableId" value="Default" />
       <updated>1709153517585</updated>
       <workItem from="1709153531143" duration="466000" />
+      <workItem from="1709222832818" duration="1916000" />
+      <workItem from="1709301369887" duration="5658000" />
+      <workItem from="1709665760134" duration="62157000" />
+      <workItem from="1710246784877" duration="19821000" />
+      <workItem from="1710417673388" duration="3508000" />
+      <workItem from="1710495858829" duration="1104000" />
+      <workItem from="1710498841941" duration="5277000" />
+      <workItem from="1710669661886" duration="3250000" />
+      <workItem from="1710681853306" duration="11949000" />
+      <workItem from="1710848535943" duration="19554000" />
+      <workItem from="1710890614211" duration="2761000" />
+      <workItem from="1711047629053" duration="8000" />
+      <workItem from="1711096788774" duration="377000" />
+      <workItem from="1711220740581" duration="26041000" />
+      <workItem from="1711908953894" duration="90000" />
+      <workItem from="1715435181241" duration="3647000" />
+      <workItem from="1715589365053" duration="20778000" />
+      <workItem from="1715778716151" duration="2173000" />
+      <workItem from="1715873679449" duration="97000" />
+      <workItem from="1715978909375" duration="966000" />
+      <workItem from="1715979946459" duration="31460000" />
     </task>
     <task id="LOCAL-00001" summary="Flask integration">
       <created>1709153691347</created>
@@ -99,7 +274,56 @@
       <option name="project" value="LOCAL" />
       <updated>1709153836610</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Extend index.html to be code generated">
+      <created>1709386540830</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709386540830</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add a connection between filesystem and html templates">
+      <created>1709708453743</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709708453743</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add a connection between filesystem and html templates">
+      <created>1709708499779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709708499779</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/Test_UI' into Test_UI&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1709708633237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709708633237</updated>
+    </task>
+    <task id="LOCAL-00007" summary="all pages have main style and have they own style in their page dir">
+      <created>1709906442877</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709906442877</updated>
+    </task>
+    <task id="LOCAL-00008" summary="all pages have main style and have they own style in their page dir">
+      <created>1709907651156</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709907651156</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Contact line now is right bellow the main information &#10;small bug fix to error page and connection errors">
+      <created>1710456186190</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710456186190</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +354,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Flask integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flask integration" />
+    <MESSAGE value="Extend index.html to be code generated" />
+    <MESSAGE value="Add a connection between filesystem and html templates" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Test_UI' into Test_UI&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="all pages have main style and have they own style in their page dir" />
+    <MESSAGE value="Contact line now is right bellow the main information &#10;small bug fix to error page and connection errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact line now is right bellow the main information &#10;small bug fix to error page and connection errors" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Art_Gallery$test.coverage" NAME="test Coverage Results" MODIFIED="1716130374300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Art_Gallery$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1716130836599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Art_Gallery$Art_Gallery.coverage" NAME="Art_Gallery Coverage Results" MODIFIED="1716127451178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Art_Gallery$tb.coverage" NAME="tb Coverage Results" MODIFIED="1711367153475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

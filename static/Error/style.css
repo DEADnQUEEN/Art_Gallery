@@ -1,0 +1,16 @@
+.error{
+    padding: 100px
+}
+
+.error-title{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    padding-bottom: 35px;
+}
+
+.error-main{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
