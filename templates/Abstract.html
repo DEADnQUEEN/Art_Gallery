@@ -4,35 +4,35 @@
         <div class="block-header">
             <h1>{{ data.title }}</h1>
         </div>
-        {% for page in range(data.blocks) %}
+    <a>{{ data.content|length }}</a>
+        {% for page in range(0, data.content|length) %}
         <div class="title-main">
             <div class="title-txt">
                 <div class="title-text-header">
                     <h2>
-                        {{ data.txt[page].title }}
+                        {{ data.txt[page][0] }}
                     </h2>
                     <h3>
-                        {{ data.txt[page].subtitle }}
+                        {{ data.txt[page][1] }}
                     </h3>
                 </div>
                 <div class="title-text-content">
-                    <p>
-                        {{ data.txt[page].content }}
-                    </p>
+                    {% for i in range(2, data.txt[page]|length - 1) %}
+                        <p>
+                            {{ data.txt[page][i] }}
+                        </p>
+                    {% endfor %}
                 </div>
-
                 <div class="title-text-footer">
                     <p>
-                        {{ data.txt[page].footer }}
+                        {{ data.txt[page][data.txt[page]|length - 1] }}
                     </p>
                 </div>
             </div>
-
             <div class="title-img">
                 <img src="{{ data.content[page] }}" alt="">
             </div>
         </div>
-
         {% endfor %}
     </div>
 {% endblock %}

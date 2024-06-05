@@ -21,7 +21,7 @@ def pages(page: str):
 
 @app.errorhandler(werkzeug.exceptions.HTTPException)
 def exc(e: werkzeug.exceptions.HTTPException):
-    data = functions.data_compose(f'{app.static_folder}\\Error')
+    data = functions.data_compose(functions.error_folder)
     data['code'] = e.code
     data['description'] = e.description
     template = functions.env.get_template(data['html'])

@@ -46,9 +46,19 @@ class Site:
     def get_flask(self) -> Flask:
         return self.__flask
 
-    def __init__(self, flask: Flask, pages_dir_root: str | os.PathLike[str] = "Pages"):
+    @property
+    def error_folder(self):
+        return '.' + os.path.join(self.static_folder, self.__error_dir_root)
+
+    def __init__(
+            self,
+            flask: Flask,
+            pages_dir_root: str | os.PathLike[str] = "Pages",
+            error_dir_root: str | os.PathLike[str] = "Error"
+    ):
         self.__flask = flask
         self.__pages_dir_root: str = pages_dir_root
+        self.__error_dir_root: str = error_dir_root
         self.__env = Environment(loader=FileSystemLoader(flask.template_folder))
 
         if not os.path.isdir(self.page_source):
@@ -63,20 +73,12 @@ class Functions(Site):
         }
 
     @staticmethod
-    def text_extend(file_path: str) -> dict:
-        out = {
-            'title': '',
-            'subtitle': '',
-            'content': '',
-            'footer': '',
-        }
-
+    def text_extend(file_path: str) -> list[str]:
         with open(file_path[3:], 'r', encoding='utf-8') as text:
-            lines = text.readlines()
-            for line in range(len(lines) - 1):
-                out[list(out.keys())[line]] = lines[line][:-1]
-            else:
-                out[list(out.keys())[len(lines) - 1]] = lines[len(lines) - 1]
+            txt = (text.read()).split('\n')
+            out: list = [
+                txt[i] for i in range(len(txt))
+            ]
 
         return out
 
@@ -103,11 +105,13 @@ class Functions(Site):
         """
         ls = os.listdir(path)
 
+        title = os.path.split(path)[-1]
+
         data: dict[str: TYPES] = {
-            "title": os.path.split(path)[-1],
+            "title": title,
             "dirs": {},
             "content": [],
-            "html": f'{os.path.split(path)[-1]}.html'
+            "html": title + self.link
         }
 
         for i in range(len(EXTENDS)):
@@ -118,26 +122,15 @@ class Functions(Site):
 
         for i in range(len(ls)):
             pth = f".{path}\\{ls[i]}"
+            file = os.path.splitext(pth)
 
-            if os.path.isdir(pth[1:]):
+            if file[1] == '':
                 data["dirs"][ls[i]] = self.data_compose(pth[1:])
-                continue
-
-            for ex in range(len(EXTENDS)):
-                if EXTENDS[ex] in ls[i]:
-                    data[EXTENDS[ex][1:]][ls[i].rstrip(string.ascii_letters)[:-1]] = pth
-                    break
+            elif file[1] in EXTENDS:
+                data[file[1][1:]][file[0]] = pth
+            elif file[1] in self.__func_extents.keys():
+                data[file[1][1:]].append(self.__func_extents[file[1]](pth))
             else:
-                for key in self.__func_extents.keys():
-                    if key in ls[i]:
-                        data[key[1:]].append(self.__func_extents[key](pth))
-                        break
-                else:
-                    data["content"].append(pth)
-
-        data['blocks'] = min(len(data['content']), len(data['txt']))
+                data["content"].append(pth)
 
         return data
-
-
-
