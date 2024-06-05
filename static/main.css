@@ -21,13 +21,19 @@ a {
 }
 
 .all .header {
-    position: sticky;
+    background-color: var(--sub-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
     top: 0;
     flex: 0 1 0;
     z-index: 3;
 }
 
 .all .extension {
+    padding-top: 150px;
     flex: 1 1 auto;
     display: inline-flex;
     justify-content: center;
@@ -38,14 +44,6 @@ a {
     flex: 0 1 0;
 }
 
-.header{
-    background-color: var(--sub-color);
-    padding: 20px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .header-buttons{
     display: flex;
     flex-direction: row;
@@ -54,6 +52,7 @@ a {
 
 .header-title{
     width: 100%;
+    margin: 20px 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -72,10 +71,6 @@ a {
     text-decoration: none;
 
     transition: all .5s;
-}
-
-.contact-block a:hover{
-    color: black;
 }
 
 *::-webkit-scrollbar {
