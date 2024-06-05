@@ -11,9 +11,8 @@ class Printer:
     args = get_args(SUPPORTED_TYPES)
     end: str = '\n'
 
-    @staticmethod
-    def __printf(text: str = ''):
-        sys.stdout.buffer.write(text.encode('utf-8'))
+    def __printf(self, text: str = ''):
+        sys.stdout.buffer.write(text.encode(self.__encoding))
 
     def __str_show(self, data: str, *args) -> None:
         self.__printf("'" + data + "'")
@@ -57,13 +56,14 @@ class Printer:
     def __split(self) -> tuple[str, str]:
         return self.sep, self.end
 
-    def __init__(self, sep: str = ',', end: str = '\n'):
+    def __init__(self, encode: str = 'utf-8', sep: str = ',', end: str = '\n'):
         self.funcs: dict[type, Callable[[SUPPORTED_TYPES, int], None]] = {
             self.args[i]: self.__getattribute__(f"_{type(self).__name__}__{self.args[i].__name__}_show")
             if f"_{type(self).__name__}__{self.args[i].__name__}_show" in dir(self)
             else self.error(type(Callable[[SUPPORTED_TYPES, int], None]))
             for i in range(len(self.args))
         }
+        self.__encoding = encode
 
         self.sep = sep
         self.end = end
