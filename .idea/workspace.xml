@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c10071c6-f2d1-436f-9c83-78f3eb52e9d3" name="Changes" comment="Update data compose algorythm">
+    <list default="true" id="c10071c6-f2d1-436f-9c83-78f3eb52e9d3" name="Changes" comment="Update data_composing to extend  main template&#10;Bug fix routing site">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/site_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/About.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Abstract.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Abstract.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Error.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Minimalism.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Minimalism.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Modern.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Modern.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Portrait.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Portrait.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/t1.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +43,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -85,29 +75,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "last_opened_file_path": "C:/Users/deadn/Desktop/pyprojects/Art_Gallery/templates",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/deadn/Desktop/pyprojects/Art_Gallery/templates&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlserver.localdb",
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\templates" />
@@ -124,7 +114,7 @@
       <recent name="C:\Users\deadn\Desktop\pyprojects\Art_Gallery\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RunManager" selected="Flask server.Art_Gallery">
     <configuration name="Art_Gallery" type="PythonConfigurationType" factoryName="Python">
       <module name="Art_Gallery" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,7 +210,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -325,7 +315,8 @@
       <workItem from="1717283353292" duration="1935000" />
       <workItem from="1717285504444" duration="71000" />
       <workItem from="1717285706619" duration="38005000" />
-      <workItem from="1717549209043" duration="28178000" />
+      <workItem from="1717549209043" duration="30448000" />
+      <workItem from="1717778593215" duration="362000" />
     </task>
     <task id="LOCAL-00001" summary="Flask integration">
       <created>1709153691347</created>
@@ -418,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717553846775</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Update data_composing to extend  main template&#10;Bug fix routing site">
+      <created>1717776950211</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717776950211</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +433,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Test_UI" />
                       </list>
                     </value>
                   </entry>
@@ -468,7 +466,8 @@
     <MESSAGE value="Change route for pages&#10;Metadata has been moved to 'site_data.py'" />
     <MESSAGE value="Added an encoding to clean output" />
     <MESSAGE value="Update data compose algorythm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update data compose algorythm" />
+    <MESSAGE value="Update data_composing to extend  main template&#10;Bug fix routing site" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update data_composing to extend  main template&#10;Bug fix routing site" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Art_Gallery$test.coverage" NAME="test Coverage Results" MODIFIED="1717551978405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
