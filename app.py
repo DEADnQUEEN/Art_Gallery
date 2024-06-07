@@ -8,7 +8,7 @@ functions = Functions(app)
 
 
 @app.route('/')
-def main():
+def main_route():
     return redirect('Gallery', Response=None, code=HTTPStatus.FOUND)
 
 
@@ -16,6 +16,8 @@ def main():
 def pages(page: str):
     if page in functions.pages:
         return functions.create_template(page)
+    elif page.capitalize() in functions.pages:
+        return redirect(f'/{page.capitalize()}', Response=None, code=HTTPStatus.FOUND)
     return abort(HTTPStatus.NOT_FOUND)
 
 
@@ -29,5 +31,9 @@ def exc(e: werkzeug.exceptions.HTTPException):
     return template.render(data=data)
 
 
-if __name__ == '__main__':
+def main():
     app.run()
+
+
+if __name__ == '__main__':
+    main()
