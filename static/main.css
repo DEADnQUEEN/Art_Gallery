@@ -1,6 +1,5 @@
 :root{
     --sub-color: rgba(0, 0, 0, 0.4);
-    --active-color: #B06AB3;
     --text-color: #ffffff;
 }
 
@@ -92,10 +91,10 @@ a {
 }
 
 .text-button:hover {
-    background-color: var(--active-color);
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: rgb(var(--sub-color));
     outline: none;
-    border-color: var(--active-color);
+    border-color: var(--text-color);
 }
 
 .contact{
